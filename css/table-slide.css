@@ -1,0 +1,26 @@
+table{
+  width: 95%;
+  display: block;
+}
+
+th, td {
+    border: 1px solid black;
+
+}
+th{
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: cursive;
+    background-color: #57CE9B;
+}
+td{
+  padding: 10px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+}
+#table1{
+  margin-top: 150px;  
+}

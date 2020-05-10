@@ -1,0 +1,235 @@
+/* Style the tab buttons */
+
+.crimelink{
+  background-color:#3BA7FF;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 15%;
+
+}
+.victimEmergency{
+  background-color:firebrick;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 15%;
+}
+.victimCrime{
+  background-color:#105FA0;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 15%;
+
+}
+.firelink{
+  background-color: darkorange;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 15%;
+}
+.emergencylink{
+   background-color:#E05353;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 15%;
+}
+.disasterlink{
+  background-color: green;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 15%;
+}
+.crimelink:hover{
+  color: black;
+  font-weight: bold;
+  font-style: oblique;
+}
+.victimEmergency:hover{
+  color: black;
+  font-weight: bold;
+  font-style: oblique;
+}
+.victimCrime:hover{
+  color: black;
+  font-weight: bold;
+  font-style: oblique;
+}
+.firelink:hover{
+  color: black;
+  font-weight: bold;
+  font-style: oblique;
+}
+.disasterlink:hover{
+  color: black;
+  font-weight: bold;
+  font-style: oblique;
+}
+.emergencylink:hover{
+  color: black;
+  font-weight: bold;
+  font-style: oblique;
+}
+/* Change background color of buttons on hover
+.crimelink:hover {
+    padding: 16px 20px;
+}
+.firelink:hover {
+      padding: 16px 20px;
+}
+.emergencylink:hover {
+      padding: 16px 20px;
+}
+.disasterlink:hover {
+      padding: 16px 20px;
+}*/
+
+/* Set default styles for tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Style each tab content individually */
+#crime {background-color:blue;}
+#fire {background-color:orange;}
+#emergency {background-color:red;}
+#disaster {background-color:brown;}
+
+body{
+     background-color:#ADDBC9;
+     overflow: -moz-scrollbars-vertical;
+     overflow-x: hidden;
+     overflow-y: auto;
+     height: 0;
+     width: 100%;
+}
+p{
+  t
+  color: black;
+  font-weight: bold;
+  font-family:Impact, Charcoal, sans-serif;
+
+}
+html, body {
+       height: 100%;
+       margin: 0;
+       padding: 0;
+     }
+
+     #table_bodywc{
+         width: 80%;
+         margin-left: 155px;
+         background-color:#3BA7FF;
+         }
+         #table_bodyvc{
+             width: 80%;
+             margin-left: 155px;
+             background-color:#105FA0;
+           }
+           #table_bodywd{
+               width: 80%;
+               margin-left: 155px;
+               background-color:green;
+             }
+             #table_bodywe{
+                 width: 80%;
+                 margin-left: 155px;
+                 background-color:#E05353;
+               }
+               #table_bodywf{
+                   width: 80%;
+                   margin-left: 155px;
+                   background-color: darkorange;
+                 }
+                 #table_bodyve{
+                     width: 80%;
+                     margin-left: 155px;
+                     background-color:firebrick;
+                   }
+
+
+
+                   #table_bodywc1{
+                       width: 80%;
+                       margin-left: 155px;
+                       background-color:#3BA7FF;
+                       }
+                       #table_bodyvc1{
+                           width: 80%;
+                           margin-left: 155px;
+                           background-color:#105FA0;
+                         }
+                         #table_bodywd1{
+                             width: 80%;
+                             margin-left: 155px;
+                             background-color:green;
+                           }
+                           #table_bodywe1{
+                               width: 80%;
+                               margin-left: 155px;
+                               background-color:#E05353;
+                             }
+                             #table_bodywf1{
+                                 width: 80%;
+                                 margin-left: 155px;
+                                 background-color: darkorange;
+                               }
+                               #table_bodyve1{
+                                   width: 80%;
+                                   margin-left: 155px;
+                                   background-color:firebrick;
+                                 }
+         th, td {
+         border: 1px solid black;
+         }
+         th{
+         padding: 10px;
+         text-align: center;
+         font-weight: bolder;
+         font-size: 15px;
+         font-family: cursive;
+         }
+         td{
+         padding: 10px;
+         text-align: center;
+         font-weight: normal;
+         font-size: 12px;
+         font-family: bookman old style;
+         text-decoration-color: black;
+         }
+
+#button{
+  display: flex;
+  justify-content: center;
+}

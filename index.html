@@ -1,0 +1,401 @@
+
+
+<html>
+
+<head>
+    <title>Firestore</title>
+    <link rel = "stylesheet" type="text/css" href = "css\index.css">
+    <link rel = "stylesheet" type="text/css" href = "css\mainUI.css">
+    <link rel = "stylesheet" type="text/css" href = "css\header.css">
+    <link rel = "stylesheet" type="text/css" href = "css\overlay.css">
+    <link rel = "stylesheet" type="text/css" href = "css\table-slide.css">
+</head>
+<body>
+
+  <div style="height:150x; width:450px; overflow-x:hidden; overflow-y: scroll; padding-bottom:10px;"></div>
+
+            <div class="header">
+                <img id="onOff" src = "images\Untitled-5.png" alt = "wang-wang" class = "wang-wang" onclick="offReceive()">
+                <img src = "images\s.png" alt = "saklolo-template" class = "center" id="s1">
+            </div>
+            <hr>
+    <div>
+      <div id = "button">
+          <button class="crimelink" onclick='openNav1()'>CRIME</button>
+          <button class="firelink" onclick='openNav2()'>FIRE</button>
+          <button class="emergencylink" onclick='openNav3()'>EMERGENCY</button>
+          <button class="disasterlink" onclick='openNav4()'>DISASTER</button>
+          <button class="victimEmergency" onclick='openNav5()'>VICTIM EMERGENCY</button>
+          <button class="victimCrime" onclick='openNav6()'>VICTIM CRIME</button>
+          </div>
+          <hr>
+
+                <div id = "overlayNav1" class = "overlay">
+                  <img src = "images\s.png" id = "s">  <a href = "Javascript:void(0)" class = "closebtn" onclick="closeNav1()"><img src = "images\Backend_logo.png"></a>
+                  <div class = "overlay-content">
+                    <table id = "table1" align = "center">
+                      <tr class = "information">
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Contact Number</th>
+                        <th>Gmail</th>
+                        <th>Location</th>
+                        <th>Report</th>
+                        <th>Comment</th>
+                        <th>Victim/Witness</th>
+                      </tr>
+                      <thead>
+                        <tbody id = "table_bodywc1"></tbody>
+                      </thead>
+                  </table>
+                </div>
+              </div>
+
+              <div id = "overlayNav2" class = "overlay">
+                <img src = "images\s.png" id = "s"><a href = "Javascript:void(0)" class = "closebtn" onclick="closeNav2()"><img src = "images\Backend_logo.png"></a>
+                <div class = "overlay-content">
+                  <table id = "table1" align = "center">
+                    <tr class = "information">
+                      <th>Date</th>
+                      <th>Name</th>
+                      <th>Contact Number</th>
+                      <th>Gmail</th>
+                      <th>Location</th>
+                      <th>Report</th>
+                      <th>Comment</th>
+                      <th>Victim/Witness</th>
+                    </tr>
+                    <thead>
+                    <tbody id = "table_bodywf1"></tbody>
+                  </thead>
+                </table>
+              </div>
+            </div>
+
+            <div id = "overlayNav3" class = "overlay">
+              <img src = "images\s.png" id = "s"><a href = "Javascript:void(0)" class = "closebtn" onclick="closeNav3()"><img src = "images\Backend_logo.png"></a>
+              <div class = "overlay-content">
+                <table id = "table1" align = "center">
+                  <tr class = "information">
+                    <th>Date</th>
+                    <th>Name</th>
+                    <th>Contact Number</th>
+                    <th>Gmail</th>
+                    <th>Location</th>
+                    <th>Report</th>
+                    <th>Comment</th>
+                    <th>Victim/Witness</th>
+                  </tr>
+                  <thead>
+                  <tbody id = "table_bodywe1"></tbody>
+                </thead>
+              </table>
+            </div>
+          </div>
+
+          <div id = "overlayNav4" class = "overlay">
+            <img src = "images\s.png" id = "s"><a href = "Javascript:void(0)" class = "closebtn" onclick="closeNav4()"><img src = "images\Backend_logo.png"></a>
+            <div class = "overlay-content">
+              <table id = "table1" align = "center">
+                <tr class = "information">
+                  <th>Date</th>
+                  <th>Name</th>
+                  <th>Contact Number</th>
+                  <th>Gmail</th>
+                  <th>Location</th>
+                  <th>Report</th>
+                  <th>Comment</th>
+                  <th>Victim/Witness</th>
+                </tr>
+                <thead>
+                <tbody id = "table_bodywd1"></tbody>
+              </thead>
+            </table>
+          </div>
+        </div>
+
+        <div id = "overlayNav5" class = "overlay">
+          <img src = "images\s.png" id = "s"><a href = "Javascript:void(0)" class = "closebtn" onclick="closeNav5()"><img src = "images\Backend_logo.png"></a>
+          <div class = "overlay-content">
+            <table id = "table1" align = "center">
+              <tr class = "information">
+                <th>Date</th>
+                <th>Name</th>
+                <th>Contact Number</th>
+                <th>Gmail</th>
+                <th>Location</th>
+                <th>Report</th>
+                <th>Comment</th>
+                <th>Victim/Witness</th>
+              </tr>
+              <thead>
+              <tbody id = "table_bodyve1"></tbody>
+            </thead>
+          </table>
+        </div>
+      </div>
+
+      <div id = "overlayNav6" class = "overlay">
+        <img src = "images\s.png" id = "s"><a href = "Javascript:void(0)" class = "closebtn" onclick="closeNav6()"><img src = "images\Backend_logo.png"></a>
+        <div class = "overlay-content">
+          <table id = "table1" align = "center">
+            <tr class = "information">
+            <th>Date</th>
+            <th>Name</th>
+            <th>Contact Number</th>
+            <th>Gmail</th>
+            <th>Location</th>
+            <th>Report</th>
+            <th>Comment</th>
+            <th>Victim/Witness</th>
+          </tr>
+          <thead>
+            <tbody id ="table_bodyvc1"></tbody>
+          </thead>
+        </table>
+      </div>
+      </div>
+
+
+  <div class="mySlides fade">
+    <table id = "table" align = "center">
+    <tr class = "information">
+    <th>Date</th>
+    <th>Name</th>
+    <th>Contact Number</th>
+    <th>Gmail</th>
+    <th>Location</th>
+    <th>Report</th>
+    <th>Comment</th>
+    <th>Victim/Witness</th>
+  </tr>
+  <thead>
+    <tbody id = "table_bodyvc"></tbody>
+  </thead>
+  <thead>
+    <tbody id = "table_bodyve"></tbody>
+  </thead>
+<thead>
+  <tbody id = "table_bodywc"></tbody>
+</thead>
+<thead>
+  <tbody id = "table_bodywd"></tbody>
+</thead>
+<thead>
+  <tbody id = "table_bodywe"></tbody>
+</thead>
+<thead>
+  <tbody id = "table_bodywf"></tbody>
+</thead>
+</table>
+</div>
+<hr>
+<br>
+<p><center>DESIGNED AND DEVELOPED BY UNIVERSIDAD DE MANILA - COLLEGE OF ENGINEERING AND TECHNOLOGY</center></p>
+<script type = "text/Javascript" src = "overlay.js"></script>
+</body>
+</html>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDMB0av7H3FLCBBLj2SiJLzKzM2YpBvvWc",
+    authDomain: "sakloloapp-463f7.firebaseapp.com",
+    databaseURL: "https://sakloloapp-463f7.firebaseio.com",
+    projectId: "sakloloapp-463f7",
+    storageBucket: "sakloloapp-463f7.appspot.com",
+    messagingSenderId: "111442338640"
+  };
+  firebase.initializeApp(config);
+
+
+  const firestore = firebase.firestore();
+ const settings = {/* your settings... */ timestampsInSnapshots: true};
+ firestore.settings(settings);
+  var str = "Witness";
+  var result = str.fontcolor("white");
+  var victim = "VICTIM";
+  var victim2 = victim.fontcolor("white");
+  var myVar =   setTimeout(function() {
+      window.location.reload();
+  }, 5000);
+/*
+  <th>Date</th>
+  <th>Name</th>
+  <th>Contact Number</th>
+  <th>Gmail</th>
+  <th>Location</th>
+  <th>Report</th>
+  <th>Comment</th>*/
+
+  /////CRIME
+  firestore.collection("Crimes").where("Type", "==", "WitnessCrime")
+    .onSnapshot(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            //console.log(doc.id, " => ", doc.data());
+            table_bodywc.innerHTML += "<tbody id  ='table_bodywc>'<tr><td>" +doc.data().Date + "</td><td>" + doc.data().Name + "</td><td>"
+            + doc.data().Contact_Number + "</td><td>" + doc.data().Email + "</td><td>" + doc.data().location
+            + "</td><td>" + doc.data().Crime + "</td><td>" + doc.data().Comments + "</td><td>" + result+ "</td></tr>"
+        });
+    });
+    /////divcrime
+    firestore.collection("Crimes").where("Type", "==", "WitnessCrime")
+      .onSnapshot(function(querySnapshot) {
+          querySnapshot.forEach(function(doc) {
+              //console.log(doc.id, " => ", doc.data());
+              table_bodywc1.innerHTML += "<tbody id  ='table_bodywc1>'<tr><td>" +doc.data().Date + "</td><td>" + doc.data().Name + "</td><td>"
+              + doc.data().Contact_Number + "</td><td>" + doc.data().Email + "</td><td>" + doc.data().location
+              + "</td><td>" + doc.data().Crime + "</td><td>" + doc.data().Comments + "</td><td>" + result+ "</td></tr>"
+          });
+      });
+
+
+    //////DISASTER
+
+    firestore.collection("Disaster").where("Type", "==", "WitnessDisaster")
+      .onSnapshot(function(querySnapshot) {
+          querySnapshot.forEach(function(doc) {
+              //console.log(doc.id, " => ", doc.data());
+              table_bodywd.innerHTML += "<tbody id  ='table_bodywd>'<tr><td>" +doc.data().Date + "</td><td>" + doc.data().Name + "</td><td>"
+              + doc.data().Contact_Number + "</td><td>" + doc.data().Email + "</td><td>" + doc.data().location
+              + "</td><td>" + doc.data().Disaster + "</td><td>" + doc.data().Comments + "</td><td>" + result+ "</td></tr>"
+          });
+      });
+      // div disaster
+      firestore.collection("Disaster").where("Type", "==", "WitnessDisaster")
+        .onSnapshot(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                //console.log(doc.id, " => ", doc.data());
+                table_bodywd1.innerHTML += "<tbody id  ='table_bodywd1>'<tr><td>" +doc.data().Date + "</td><td>" + doc.data().Name + "</td><td>"
+                + doc.data().Contact_Number + "</td><td>" + doc.data().Email + "</td><td>" + doc.data().location
+                + "</td><td>" + doc.data().Disaster + "</td><td>" + doc.data().Comments + "</td><td>" + result+ "</td></tr>"
+            });
+        });
+
+
+  //////EMERGENCY
+  firestore.collection("Emergency").where("Type", "==", "WitnessEmergency")
+    .onSnapshot(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            //console.log(doc.id, " => ", doc.data());
+            table_bodywe.innerHTML += "<tbody id  ='table_bodywe>'<tr><td>" +doc.data().Date + "</td><td>" + doc.data().Name + "</td><td>"
+            + doc.data().Contact_Number + "</td><td>" + doc.data().Email + "</td><td>" + doc.data().location
+            + "</td><td>" + doc.data().Crime + "</td><td>" + doc.data().Comments + "</td><td>" + result+ "</td></tr>"
+        });
+    });
+  /// div emergency
+  firestore.collection("Emergency").where("Type", "==", "WitnessEmergency")
+    .onSnapshot(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            //console.log(doc.id, " => ", doc.data());
+            table_bodywe1.innerHTML += "<tbody id  ='table_bodywe1>'<tr><td>" +doc.data().Date + "</td><td>" + doc.data().Name + "</td><td>"
+            + doc.data().Contact_Number + "</td><td>" + doc.data().Email + "</td><td>" + doc.data().location
+            + "</td><td>" + doc.data().Crime + "</td><td>" + doc.data().Comments + "</td><td>" + result+ "</td></tr>"
+        });
+    });
+
+  ///////FIRE
+  firestore.collection("Fire").where("Type", "==", "WitnessFire")
+    .onSnapshot(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            //console.log(doc.id, " => ", doc.data());
+            table_bodywf.innerHTML += "<tbody id  ='table_bodywf>'<tr><td>" +doc.data().Date + "</td><td>" + doc.data().Name + "</td><td>"
+            + doc.data().Contact_Number + "</td><td>" + doc.data().Email + "</td><td>" + doc.data().location
+            + "</td><td>" + "FIRE" + "</td><td>" + doc.data().Comments + "</td><td>" + result+ "</td></tr>"
+        });
+    });
+    // dive fire
+    firestore.collection("Fire").where("Type", "==", "WitnessFire")
+      .onSnapshot(function(querySnapshot) {
+          querySnapshot.forEach(function(doc) {
+              //console.log(doc.id, " => ", doc.data());
+              table_bodywf1.innerHTML += "<tbody id  ='table_bodywf1>'<tr><td>" +doc.data().Date + "</td><td>" + doc.data().Name + "</td><td>"
+              + doc.data().Contact_Number + "</td><td>" + doc.data().Email + "</td><td>" + doc.data().location
+              + "</td><td>" + "FIRE" + "</td><td>" + doc.data().Comments + "</td><td>" + result+ "</td></tr>"
+          });
+      });
+
+
+  //////victimCrimes
+  firestore.collection("victimCrimes").where("Type", "==", "VictimCrime")
+    .onSnapshot(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            //console.log(doc.id, " => ", doc.data());
+            table_bodyvc.innerHTML += "<tbody id  ='table_bodyvc>'<tr ><td>" +doc.data().Date + "</td><td>" + doc.data().Name + "</td><td>"
++ doc.data().Contact_Number + "</td><td>" + doc.data().Email + "</td><td>" + doc.data().Location
++ "</td><td>" + "N/A" + "</td><td>" + "N/A" + "</td><td>" + victim2+ "</td></tr>"
+
+        });
+    });
+    // div victim Crimes
+    firestore.collection("victimCrimes").where("Type", "==", "VictimCrime")
+      .onSnapshot(function(querySnapshot) {
+          querySnapshot.forEach(function(doc) {
+              //console.log(doc.id, " => ", doc.data());
+              table_bodyvc1.innerHTML += "<tbody id  ='table_bodyvc1>'<tr ><td>" +doc.data().Date + "</td><td>" + doc.data().Name + "</td><td>"
+  + doc.data().Contact_Number + "</td><td>" + doc.data().Email + "</td><td>" + doc.data().Location
+  + "</td><td>" + "N/A" + "</td><td>" + "N/A" + "</td><td>" + victim2+ "</td></tr>"
+
+          });
+      });
+
+  ///////////////vitimEmergency
+  firestore.collection("victimEmergency").where("Type", "==", "VictimEmergency")
+    .onSnapshot(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            //console.log(doc.id, " => ", doc.data());
+            table_bodyve.innerHTML += "<tbody id  ='table_bodyve>'<tr ><td>" +doc.data().Date + "</td><td>" + doc.data().Name + "</td><td>"
++ doc.data().Contact_Number + "</td><td>" + doc.data().Email + "</td><td>" + doc.data().Location
++ "</td><td>" + "N/A" + "</td><td>" + "N/A" + "</td><td>" + victim2+ "</td></tr>"
+
+        });
+    });
+    // div victim emergency
+    firestore.collection("victimEmergency").where("Type", "==", "VictimEmergency")
+      .onSnapshot(function(querySnapshot) {
+          querySnapshot.forEach(function(doc) {
+              //console.log(doc.id, " => ", doc.data());
+              table_bodyve1.innerHTML += "<tbody id  ='table_bodyve1>'<tr ><td>" +doc.data().Date + "</td><td>" + doc.data().Name + "</td><td>"
+  + doc.data().Contact_Number + "</td><td>" + doc.data().Email + "</td><td>" + doc.data().Location
+  + "</td><td>" + "N/A" + "</td><td>" + "N/A" + "</td><td>" + victim2+ "</td></tr>"
+
+          });
+      });
+
+
+      var timer;
+      function reload() {
+          timer = setInterval(function() {
+              $.post('foo.html', function(data) {
+                  $('#bar').html(data);
+              });
+          }, 1000);
+      }
+
+      function clear() {
+          clearInterval(timer);
+      }
+var image_tracker = "off";
+var myVar;
+var count = 120000;
+function offReceive(){
+  if (image_tracker == "off"){
+      clearTimeout(myVar);
+      document.getElementById("onOff").src="images/off.png";
+      image_tracker="on";
+
+      }
+  else{
+      document.getElementById("onOff").src="images/Untitled-5.png"
+      image_tracker="off";
+      location.reload(true);
+  }
+}
+
+
+
+
+
+</script>

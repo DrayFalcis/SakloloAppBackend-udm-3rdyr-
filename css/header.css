@@ -1,0 +1,36 @@
+.header {
+  overflow: hidden;
+  padding: 10px;
+}
+img{
+  width: 100px;
+  height: 100px;
+  margin-left: 100px;
+}
+.header-right {
+  float: right;
+  margin-right: 60px;
+}
+.center {
+    margin-left: 10px;
+    width: 60%;
+    padding: 10px;
+}
+hr{
+  margin-left: 65px;
+  margin-right: 65px;
+  border: 2px solid black;
+}
+#s{
+  float: left;
+  margin-top: 20px;
+  width: 400px;
+  height: 120px;
+  margin-left: 30px;
+}
+#s1{
+  margin-top: 20px;
+  width: 450px;
+  height: 120px;
+  margin-left: 230px;
+}

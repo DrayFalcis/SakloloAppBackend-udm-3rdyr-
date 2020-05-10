@@ -1,0 +1,33 @@
+#map{
+  width: 80%;
+  height: 450px;
+  /*margin-top:20px;*/
+  margin-left:155px;
+  margin-right: 155px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+#location_button{
+  position: relative;
+  text-align: center;
+  background-color: red;
+  border: 2px solid gold;
+  padding: 10px;
+  margin-left: 650px;
+  float: right;
+  margin-bottom: 6px;
+  margin-right: 147px;
+  color:white;
+  font-size: 15px;
+  font-style:oblique;
+  font-family: cursive;
+}
+#location-button:hover{
+  opacity: 0.6;
+}
+/*#demo{
+  font-size: 10px;
+  font-color: red;
+  font-weight: bold;
+  font-family: sans-serif;
+}*/
